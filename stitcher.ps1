@@ -22,11 +22,10 @@
 .PARAMETER KeepSegments
     If set, the temporary segment files are not deleted after stitching.
 
-.EXAMPLE; executed within directory of the powershell file
+.EXAMPLE executed within directory of the powershell file or if microslop says you aren't allowed to run RemoteSigned scripts
     .\<powershell-file-name>.ps1 -Id 74876574-4bcb-486f-a20d-8a4c556607a7
     .\<powershell-file-name>.ps1 -Id 74876574-4bcb-486f-a20d-8a4c556607a7 -Output my_song
     .\<powershell-file-name>.ps1 -Id 74876574-4bcb-486f-a20d-8a4c556607a7 -Bitrate 64k -KeepSegments
-.EXAMPLE; if microslop says you aren't allowed to run RemoteSigned scripts
     powershell -ExecutionPolicy Bypass -File .\<powershell-file-name>.ps1 74876574-4bcb-486f-a20d-8a4c556607a7 "output file name"
 #>
 param(
